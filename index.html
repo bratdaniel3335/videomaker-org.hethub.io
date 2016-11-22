@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Данила Братышев</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="Slider/slider.css">
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/greensock/GreenSock-JS/94c5d3100f78656c3a336ff1080ce22fba63394d/src/uncompressed/TweenMax.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/greensock/GreenSock-JS/master/src/minified/jquery.gsap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/greensock/GreenSock-JS/master/src/minified/TweenLite.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-requestAnimationFrame/0.1.2/jquery.requestAnimationFrame.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/script2.js"></script>
+        <script type="text/javascript" src="js/animatescroll.js"></script>
+        <script type="text/javascript">      
+            
+        $(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    items : 2,
+    lazyLoad : true,
+    navigation : true,
+    pagination: false,
+
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+  }); 
+}); 
+        </script>
+    </head>
+    <body>
+<div class='nav'>
+  <ul>
+    <li><a id="main" onclick="$('.kenan').animatescroll({scrollSpeed:2000,easing:'easeOutQuart'});">ГЛАВНАЯ</a></li>
+    <li><a id="My_works" onclick="$('.zakazi').animatescroll({scrollSpeed:2000,easing:'easeOutQuart'});">НАВЫКИ</a></li>
+    <li><a id="about"     onclick="$('.certificate').animatescroll({scrollSpeed:2000,easing:'easeOutQuart'});">ЦЕНЫ</a></li>
+    <li><a id="cerf" onclick="$('.feedback').animatescroll({scrollSpeed:2000,easing:'easeOutQuart'});">ГАЛЕРЕЯ</a></li>
+    <li><a id="feed" onclick="$('.footer').animatescroll({scrollSpeed:2000,easing:'easeOutQuart'});">КОНТАКТЫ</a></li>
+  </ul>
+</div>                              
+    <div class="kenan large-header" id="large-header">
+        <div class="fon">
+                <div class="content"> 
+                   <div class="block_white bannertext">
+                       <div class="main_word fake">
+                           VIDEOMAKER
+                    </div>
+                    <div class="down_main_word fake">
+                        Видеомонтаж 
+                       </div>
+                   </div>
+                </div>
+                 <canvas id="#canvas"></canvas>
+                  <span class="scroll-btn">
+	                    <a onclick="$('.zakazi').animatescroll({scrollSpeed:2000,easing:'easeInOutExpo'});">
+                            <span class="mouse">
+                                <span>
+                                </span>
+                            </span>
+	                    </a>
+
+                 </span>
+            </div>   
+        </div>
+        <div class="zakazi">
+          <div class="content">
+               <div class="main fake">
+                    НАВЫКИ
+               </div>
+<div class="skillbar clearfix " data-percent="95%">
+	<div class="skillbar-title" style="background: #d35400;"><span>SONY VEGAS</span></div>
+	<div class="skillbar-bar" style="background: #e67e22;"></div>
+	<div class="skill-bar-percent">95%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="60%">
+	<div class="skillbar-title" style="background: #2980b9;"><span>PHOTOSHOP</span></div>
+	<div class="skillbar-bar" style="background: #3498db;"></div>
+	<div class="skill-bar-percent">60%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="30%">
+	<div class="skillbar-title" style="background: #780e80;"><span>AFTER EFFECTS</span></div>
+	<div class="skillbar-bar" style="background: rgb(156, 98, 146);"></div>
+	<div class="skill-bar-percent">30%</div>
+</div> <!-- End Skill Bar -->
+              <div id="slider">
+	<input type="radio" name="slider" id="slide1" checked="">
+	<input type="radio" name="slider" id="slide2">
+	<input type="radio" name="slider" id="slide3">
+	<input type="radio" name="slider" id="slide4">
+	<input type="radio" name="slider" id="slide5">
+
+	<div id="slides">
+		<div id="overflow">
+			<div class="inner">
+				<div class="page">
+					<div class="page-1">
+                        <div class="underpage1">
+                            <div class="text1">
+                                <b id="vegas">Sony vegas PRO</b> - программа для монтажа простых элементов видео (переходов, стабилизации, цветокоррекции и простых видеоэффектов).
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<div class="page">
+                    <div class="page-2">
+                        <div class="underpage2">
+                               <div class="text2">
+                                   <b id="photoshop">Adobe photoshop</b> - инструмент необходимый для создания, редактирования, обработки и коррекции картинок.
+                                </div>
+                            </div>
+                    </div>
+				</div>
+				<div class="page">
+                    <div class="page-3"></div>
+                        <div class="underpage3">
+                            <div class="text3">
+                            <b id="effects">Adobe after effects</b> - инструмент для создания сложных видеоэффектов. От <b id="vegas">sony vegas</b> отличается значительно более широкими возможностями.
+                            </div>
+                    </div>
+				</div>
+			</div> <!--inner-->
+		</div> <!--overflow-->
+	</div> <!--slides-->
+	
+	<div id="controls">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+	</div>
+	
+	<div id="active">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+	</div>
+</div>
+            <div class="placebo"> </div>
+            </div>
+        </div>   
+        <div class="certificate">
+           <div class="content">
+               <div class="color"></div>
+                <div class="main cerf fake">ЦЕНЫ</div>
+                <div id="owl-demo" class="owl-carousel">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+            </div>    
+        </div>
+        <div class="feedback">
+                <div class="content">
+                   <div id="triangle-down"></div>
+                        <div class="main fake">
+                           ГАЛЕРЕЯ
+                        </div>
+
+               </div>
+        </div>
+        <div class="footer">
+           <div class="content">
+              <div class="left_words">
+              <div class="author fake">&copy;Данила Братышев</div>
+              </div>
+              <div class="social">
+              <a href="https://vk.com/d.bratyshev" class="link facebook" target="_blank"><span class="fa fa-vk" aria-hidden="true"></span></a>
+              <a href="#" class="link twitter" target="_blank"><span class="fa fa-twitter"></span></a>
+              <a href="#" class="link google-plus" target="_blank"><span class="fa fa-google-plus-square"></span></a>
+</div>
+            </div>
+        </div>
+
+
+<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 9999999999999999999999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #222 center center no-repeat;background-size:41px;}</style>
+<div id="hellopreloader"><div id="hellopreloader_preload">
+<div id="wrapper">
+
+  <div class="circle circ_1"></div>
+  <div class="circle circ_2"></div>
+  <div class="circle circ_3"></div>
+  <div class="circle circ_4"></div>
+</div>
+
+<!-- generic goo magic code -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+    </filter>
+  </defs>
+</svg>
+</div>
+
+</div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},2000);};</script>
+</body>    
+</html>

@@ -1,0 +1,202 @@
+@font-face {
+    font-family: fake;
+    src: local("fake"),
+    url(../fonts/fake.otf);    
+}
+
+#slider {
+width: 900px; 
+margin: 0px auto; 
+margin-top:100px; 
+position: relative;
+}
+
+.inner {width: 500%;}
+.inner:after {
+	content:'';
+	display: block;
+	height: 0;
+	clear:both;
+	}
+.page {float: left; width: 20%;}
+
+/*Описание картинок*/
+
+.page-1 {
+    margin: 0 auto;
+    width:890px; height: 380px;
+    background-image: url(sony%20vegas.jpg);
+}
+
+.page-2 {
+    margin: 0 auto;
+    background-image: url(photoshop.jpg);
+    width:890px; height: 380px;
+}
+
+.page-3 {
+    margin: 0 auto;
+    background-image: url(after%20effects.jpg);
+    width:890px; height: 380px;
+}
+
+.underpage1 {
+    width: 890px;
+    height: 380px;
+    background-color:rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.underpage2 {
+    width: 890px;
+    height: 380px;
+    background-color:rgba(0,0,0,0.2)
+}
+
+.underpage3 {
+    width: 890px;
+    height: 380px;
+    background-color:rgba(0,0,0,0.2);
+    transform: translateY(-380px) translateX(5px);
+    
+}
+
+.text1 {
+    width: 890px;
+    height: 120px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 32px;
+    font-family: fake;
+    color:#fff;
+    transform: translateY(140px);
+}
+
+#vegas {
+    color:#ce6927;
+}
+
+.text2 {
+    width: 890px;
+    height: 120px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 32px;
+    font-family: fake;
+    color:#fff;
+    transform: translateY(140px);
+}
+
+#photoshop {
+    color:#2980b9
+}
+
+.text3 {
+    width: 890px;
+    height: 120px;
+    background-color: rgba(0,0,0,0.5);
+    transform:translateX(5px);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 32px;
+    font-family: fake;
+    color:#fff;
+    transform: translateY(140px)
+}
+
+#effects {
+    color:#780e80;
+}
+
+#overflow {
+    overflow: hidden;
+    height: 380px
+}
+#slider input {display: none;}
+
+#controls {
+position: absolute;
+width:100%;
+top: 170px;
+left: 0;
+height: 50px;
+}
+
+#controls label {
+display: none;
+opacity: 0.3;
+cursor: pointer;
+}
+#controls label:hover {
+opacity: 0.8;
+}
+													/* перелистывание фотографий */	
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(1) {
+/* первые пять значений создадут стрелку справа*/
+width: 0;
+height: 0;
+border-top: 20px solid transparent;
+border-left: 20px solid #333;
+border-bottom: 20px solid transparent;
+float: right; /*в правый угол*/
+margin-right:-30px; /* за блок*/ 
+display: block;
+transition:0.25s;
+}
+#slide1:checked ~ #controls label:nth-child(3),
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2) {
+/*стрелка слева*/
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+    border-right: 20px solid  rgb(51, 51, 51);
+    float: left;	
+	display: block;
+    margin-left: -27px;
+    transition:0.25s;
+	}
+
+#slide1:checked ~ #slides .inner { margin-left:0;} 
+#slide2:checked ~ #slides .inner { margin-left:-100%;} 
+#slide3:checked ~ #slides .inner { margin-left:-200%;} 
+#slide4:checked ~ #slides .inner { margin-left:-300%;} 
+#slide5:checked ~ #slides .inner { margin-left:-400%;} 
+
+/*точки для перелистывания*/
+#active {
+text-align: center;
+margin-top: 10px;
+}
+#active label {
+width: 15px;
+height:10px;
+background: #ccc;
+display: inline-block;
+cursor: pointer;
+border-radius: 2px;
+transition:0.5s;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	}
+#active label:hover {
+background: #999;
+}
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2),
+#slide3:checked ~ #active label:nth-child(3),
+#slide4:checked ~ #active label:nth-child(4),
+#slide5:checked ~ #active label:nth-child(5) { background: #333;}
+
+#slides .inner {
+transition: all 0.8s ease-in-out;
+-webkit-transition: all 0.8s ease-in-out;
+-moz-transition: all 0.8s ease-in-out;
+-ms-transition: all 0.8s ease-in-out;
+-o-transition: all 0.8s ease-in-out;
+}
